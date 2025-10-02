@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class obstacleScorer : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
         if (scoreManager.instance != null)
         {
