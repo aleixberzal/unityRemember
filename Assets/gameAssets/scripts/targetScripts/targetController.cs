@@ -1,10 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class targetController : MonoBehaviour
 {
     public Transform[] spawn_point = new Transform[6];
     public GameObject target_prefab;
-
     void Start()
     {
         spawnTargets();

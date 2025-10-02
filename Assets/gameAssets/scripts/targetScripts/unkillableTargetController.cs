@@ -9,9 +9,18 @@ public class unkillableTargetController : MonoBehaviour
 
     private GameObject target;
     private int currentPoint = 0;
+
+    public bool isObstacle = false;
     void Start()
     {
-        target = Instantiate(unkillable_target_prefab, sweep_point[0].position, sweep_point[0].rotation);
+        if (isObstacle)
+        {
+            target = Instantiate(unkillable_target_prefab, sweep_point[0].position, sweep_point[0].rotation);
+        }
+        else
+        {
+            target = Instantiate(unkillable_target_prefab, sweep_point[0].position, Quaternion.Euler(0, 90, 0));
+        }
     }
 
     void Update()
@@ -29,4 +38,6 @@ public class unkillableTargetController : MonoBehaviour
             currentPoint = (currentPoint + 1) % sweep_point.Length;
         }
     }
+
+    
 }
