@@ -205,7 +205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358216}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: 6.41, y: 3.16, z: 0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1666,6 +1666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c97b3cfbbff6f14e93842f9f744106a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSpecial: 0
 --- !u!1 &1853773317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,6 +1934,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3181026855495231729, guid: c9dc66432cfef9b44a4e8ee4809a661f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1810514821871889169}
+    - targetCorrespondingSourceObject: {fileID: 3181026855495231729, guid: c9dc66432cfef9b44a4e8ee4809a661f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1810514821871889174}
   m_SourcePrefab: {fileID: 100100000, guid: c9dc66432cfef9b44a4e8ee4809a661f, type: 3}
 --- !u!4 &1810514821871889167 stripped
 Transform:
@@ -1974,6 +1978,26 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1810514821871889174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810514821871889168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1825eeafe8ea4334c9e24ba9c70db200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 358219}
+  target: {fileID: 8055510286415925343}
+  horizontalSensitivity: 120
+  verticalSensitivity: 80
+  maxDistance: 5
+  minDistance: 0.5
+  yaw: 0
+  pitch: 0
 --- !u!1001 &8055510286415925342
 PrefabInstance:
   m_ObjectHideFlags: 0
